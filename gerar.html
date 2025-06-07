@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Imagens</title>
+    <link rel="stylesheet" href="./estilos/estilo.css">
+</head>
+<body>
+    <!-- Navbar padrão -->
+    <nav class="navbar">
+        <div class="nav-logo">🎨</div>
+        <input type="text" class="nav-search" placeholder="Pesquisar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="gerar.html">Gerar</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <div class="nav-avatar">👤</div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main class="gerar-container">
+        <h1>Gerador de Imagens</h1>
+        <p>Você poderá descrever uma imagem futuramente para que ela seja gerada automaticamente.</p>
+
+        <h2>Como funcionará:</h2>
+        <ol>
+            <li>Você escreve uma descrição da imagem desejada.</li>
+            <li>O sistema processará a descrição.</li>
+            <li>Uma imagem será gerada com base no seu texto.</li>
+        </ol>
+
+        <!-- Formulário -->
+        <form class="formulario-contato" action="#">
+            <label for="descricao">Descreva sua imagem</label>
+            <input type="text" name="descricao" id="descricao" placeholder="Ex: Um pôr do sol nas montanhas">
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <!-- Imagem gerada (placeholder) -->
+        <div style="text-align: center; margin-top: 30px;">
+            <img src="https://picsum.photos/400/300" alt="Imagem gerada automaticamente" style="border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+        </div>
+
+        <!-- Link para voltar -->
+        <p style="text-align: center; margin-top: 40px;">
+            <a href="index.html"><strong>← Voltar para a Home</strong></a>
+        </p>
+    </main>
+</body>
+</html>
+
+<!--- **`gerar.html` (Página para Geração de Imagens)**
+    - Criar um cabeçalho (`<header>`) com o título "Gerador de Imagens".
+    - Adicionar um parágrafo explicando que o usuário poderá descrever uma imagem para gerá-la futuramente.
+    - Criar uma lista com instruções sobre como a ferramenta funcionará.
+
+    4. **Criar a estrutura da página de geração de imagens (`gerar.html`)**
+    - Adicionar um **cabeçalho** com o título da página.
+
+    - Criar um **formulário** que permitirá que o usuário insira uma descrição da imagem que deseja gerar. O formulário deve conter:
+        - Um campo de **texto** (`<input type="text">`) para a descrição da imagem.
+        - Um **botão de envio** para enviar a solicitação (por enquanto, sem funcionalidade dinâmica).
+    - Inserir um espaço reservado para a **imagem gerada** (pode ser uma [Lorem Picsum](https://picsum.photos/)).
+    - Adicionar um **link** para voltar à página inicial
+- Garantir que o botão de envio esteja funcional (por enquanto, apenas com o atributo `action="#"`).

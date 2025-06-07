@@ -1,0 +1,559 @@
+/* NAVBAR estilo Pinterest */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    height: 70px;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #cc0000;
+}
+
+.nav-search {
+    flex: 1;
+    margin: 0 20px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 30px;
+    background-color: #f0f0f0;
+    font-size: 1rem;
+    max-width: 600px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links li a:hover {
+    color: #cc0000;
+}
+
+.nav-avatar {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+/* Ajuste do body para não ficar escondido atrás da navbar */
+body {
+    padding-top: 80px;
+}
+.gallery {
+    column-count: 4;
+    column-gap: 16px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    break-inside: avoid;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+@media screen and (max-width: 1200px) {
+    .gallery {
+        column-count: 3;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gallery {
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery {
+        column-count: 1;
+    }
+}
+.tabela-funcionalidades {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.tabela-funcionalidades thead {
+    background-color: #f0f0f0;
+}
+
+.tabela-funcionalidades th, 
+.tabela-funcionalidades td {
+    padding: 15px;
+    text-align: left;
+}
+
+.tabela-funcionalidades tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.tabela-funcionalidades tr:hover {
+    background-color: #f9f9f9;
+}
+
+.intro {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.intro h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+.sobre-container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+    font-family: Georgia, serif;
+    color: #111;
+}
+
+.sobre-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.sobre-container p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.sobre-container h2 {
+    margin-top: 40px;
+    font-size: 1.6em;
+    font-style: italic;
+}
+
+.sobre-container ol {
+    list-style-position: inside;
+    padding-left: 0;
+    text-align: left;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.sobre-container li {
+    font-size: 1.1em;
+    margin: 6px 0;
+}
+.galeria-container {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+  font-family: Georgia, serif;
+}
+
+.galeria-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.galeria-lista {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.galeria-lista img {
+  width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.galeria-lista img:hover {
+  transform: scale(1.05);
+}
+
+.galeria-tabela {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Georgia, serif;
+}
+
+.galeria-tabela th,
+.galeria-tabela td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+
+.galeria-tabela th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.galeria-tabela img {
+  border-radius: 8px;
+}
+/* Fonte base para todo o site */
+body {
+    padding-top: 80px;
+    font-family: Georgia, serif;
+    color: #111;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    height: 70px;
+    font-family: Georgia, serif;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #cc0000;
+}
+
+.nav-search {
+    flex: 1;
+    margin: 0 20px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 30px;
+    background-color: #f0f0f0;
+    font-size: 1rem;
+    max-width: 600px;
+    font-family: Georgia, serif;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+    transition: color 0.2s;
+    font-family: Georgia, serif;
+}
+
+.nav-links li a:hover {
+    color: #cc0000;
+}
+
+.nav-avatar {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
+.gallery {
+    column-count: 4;
+    column-gap: 16px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    break-inside: avoid;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+@media screen and (max-width: 1200px) {
+    .gallery {
+        column-count: 3;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gallery {
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery {
+        column-count: 1;
+    }
+}
+
+/* Tabela de funcionalidades */
+.tabela-funcionalidades {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    font-family: Georgia, serif;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.tabela-funcionalidades thead {
+    background-color: #f0f0f0;
+}
+
+.tabela-funcionalidades th, 
+.tabela-funcionalidades td {
+    padding: 15px;
+    text-align: left;
+}
+
+.tabela-funcionalidades tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.tabela-funcionalidades tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Seção de introdução */
+.intro {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.intro h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+/* Seção Sobre */
+.sobre-container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.sobre-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.sobre-container p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.sobre-container h2 {
+    margin-top: 40px;
+    font-size: 1.6em;
+    font-style: italic;
+}
+
+.sobre-container ol {
+    list-style-position: inside;
+    padding-left: 0;
+    text-align: left;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.sobre-container li {
+    font-size: 1.1em;
+    margin: 6px 0;
+}
+
+/* Seção Galeria */
+.galeria-container {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.galeria-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.galeria-lista {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.galeria-lista img {
+    width: 200px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.galeria-lista img:hover {
+    transform: scale(1.05);
+}
+
+.galeria-tabela {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.galeria-tabela th,
+.galeria-tabela td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+.galeria-tabela th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.galeria-tabela img {
+    border-radius: 8px;
+}
+
+/* Seção Contato */
+.contato-container {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 0 20px;
+    color: #111;
+}
+
+.contato-container h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contato-container p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.lista-contato {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+    font-size: 1.1em;
+}
+
+.lista-contato li {
+    margin: 10px 0;
+}
+
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario-contato label {
+    font-weight: bold;
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    resize: vertical;
+    font-family: Georgia, serif;
+}
+
+.formulario-contato button {
+    background-color: #cc0000;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-contato button:hover {
+    background-color: #a80000;
+}
+
+.gerar-container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+    font-family: Georgia, serif;
+    color: #111;
+}
+
+.gerar-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.gerar-container h2 {
+    font-size: 1.5em;
+    margin-top: 30px;
+}
+
